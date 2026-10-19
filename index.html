@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#ffffff" />
+<title>Prioritas Creativo — Credenciales PVC Personalizadas en Quito</title>
+<meta name="description" content="Identificación profesional de alta calidad. Diseño a medida, materiales premium y entrega puntual para tu empresa u organización. Credenciales PVC CR-80, diseño gráfico corporativo y tarjetas virtuales interactivas." />
+<meta name="keywords" content="credenciales PVC, credenciales personalizadas, tarjetas CR-80, diseño gráfico Quito, tarjetas virtuales, identificación profesional, Ecuador, Prioritas Creativo" />
+<meta name="author" content="Prioritas Creativo" />
+<meta property="og:title" content="Prioritas Creativo — Credenciales PVC Personalizadas en Quito" />
+<meta property="og:description" content="Identificación profesional de alta calidad. Diseño a medida, materiales premium y entrega puntual." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_EC" />
+<meta property="og:url" content="https://credenciales-personalizadas-pvc-axp.vercel.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Prioritas Creativo — Credenciales PVC Personalizadas en Quito" />
+<meta name="twitter:description" content="Identificación profesional de alta calidad. Diseño a medida, materiales premium y entrega puntual." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   Reset & base
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth;font-size:16px}
+:root{
+  --bg:#ffffff;
+  --fg:#1d1d1f;
+  --fg-muted:#6e6e73;
+  --fg-soft:#86868b;
+  --surface:#f5f5f7;
+  --surface-2:#fafafa;
+  --border:rgba(0,0,0,0.08);
+  --accent:#1d1d1f;
+  --accent-contrast:#ffffff;
+  --popular-glow:#f3c623;
+  --radius:18px;
+  --radius-lg:28px;
+  --radius-pill:9999px;
+  --maxw:1180px;
+  --header-h:48px;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+  --dur:900ms;
+  --shadow-card:0 24px 48px -12px rgba(0,0,0,0.12);
+  --shadow-pop:0 24px 48px -12px rgba(0,0,0,0.35);
+}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+  line-height:1.5;
+  letter-spacing:-0.015em;
+  font-feature-settings:'ss01','cv01','cv02','cv03';
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+ul,ol{list-style:none}
+section[id]{scroll-margin-top:calc(var(--header-h) + 12px)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* ============================================================
+   Layout helpers
+   ============================================================ */
+.container{max-width:var(--maxw);margin-inline:auto;padding-inline:22px}
+@media(min-width:768px){.container{padding-inline:32px}}
+
+.eyebrow{
+  font-size:13px;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--fg-muted);margin-bottom:14px;
+}
+.headline{
+  font-weight:600;letter-spacing:-0.04em;line-height:1.05;
+  font-size:clamp(2rem,5vw,3.5rem);color:var(--fg);
+}
+.hero-title{
+  font-weight:600;letter-spacing:-0.045em;line-height:1.05;
+  font-size:clamp(2.5rem,7vw,5.5rem);
+}
+.section{padding:96px 0}
+@media(min-width:768px){.section{padding:128px 0}}
+.section-head{text-align:center;max-width:780px;margin-inline:auto}
+.section-head p{margin-top:18px;font-size:clamp(1rem,1.6vw,1.2rem);color:var(--fg-muted);max-width:640px;margin-inline:auto}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:var(--header-h);
+  transition:background-color .3s var(--ease),border-color .3s var(--ease),backdrop-filter .3s var(--ease);
+  background:transparent;
+  border-bottom:1px solid transparent;
+}
+.site-header.scrolled{
+  background:rgba(255,255,255,0.72);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.header-inner{
+  height:100%;display:flex;align-items:center;justify-content:space-between;
+  max-width:var(--maxw);margin-inline:auto;padding-inline:22px;
+}
+@media(min-width:768px){.header-inner{padding-inline:32px}}
+.brand{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;letter-spacing:-0.02em;color:rgba(29,29,31,0.9)}
+.brand:hover{color:#000}
+.brand-badge{
+  display:inline-flex;height:24px;width:24px;align-items:center;justify-content:center;
+  border-radius:6px;background:var(--accent);color:var(--accent-contrast);
+  font-size:10px;font-weight:700;letter-spacing:0;
+}
+.nav-desktop{display:none}
+.nav-desktop ul{display:flex;align-items:center;gap:28px}
+.nav-desktop a{font-size:13px;color:rgba(29,29,31,0.8);transition:color .2s var(--ease)}
+.nav-desktop a:hover{color:#000}
+.cta-pill{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--accent);color:var(--accent-contrast);
+  border-radius:var(--radius-pill);padding:8px 16px;font-size:13px;font-weight:500;
+  transition:background-color .2s var(--ease),transform .2s var(--ease);
+}
+.cta-pill:hover{background:#000;transform:translateY(-1px)}
+.nav-toggle{
+  display:inline-flex;height:36px;width:36px;align-items:center;justify-content:center;
+  border-radius:8px;
+}
+@media(min-width:880px){.nav-desktop{display:block}.nav-toggle{display:none}.cta-desktop{display:inline-flex}}
+@media(max-width:879px){.cta-desktop{display:none}}
+.mobile-drawer{
+  display:none;background:rgba(255,255,255,0.92);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.mobile-drawer.open{display:block}
+.mobile-drawer ul{padding:8px 22px 14px;display:flex;flex-direction:column}
+.mobile-drawer li a{display:block;padding:12px 0;font-size:16px;border-bottom:1px solid rgba(0,0,0,0.06)}
+.mobile-drawer li:last-child a{border-bottom:0}
+.mobile-drawer li.cta-li{padding-top:12px}
+.mobile-drawer li.cta-li a{
+  display:flex;align-items:center;justify-content:center;border:0;border-radius:var(--radius-pill);
+  background:var(--accent);color:var(--accent-contrast);padding:12px 16px;font-size:14px
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero{
+  position:relative;padding-top:108px;padding-bottom:96px;overflow:hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(29,29,31,0.06) 0%, transparent 70%),
+    #ffffff;
+}
+@media(min-width:768px){.hero{padding-top:128px;padding-bottom:128px}}
+.hero-inner{text-align:center}
+.hero-eyebrow{opacity:0;transform:translateY(8px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.hero-title-row{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.hero-sub{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease) .15s,transform 1s var(--ease) .15s}
+.hero-ctas{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease) .3s,transform 1s var(--ease) .3s}
+.hero-showcase{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease) .45s,transform 1s var(--ease) .45s}
+.hero.is-in .hero-eyebrow,.hero.is-in .hero-title-row,.hero.is-in .hero-sub,.hero.is-in .hero-ctas,.hero.is-in .hero-showcase{opacity:1;transform:none}
+.hero-title-mute{color:rgba(29,29,31,0.55)}
+.hero-sub{margin:24px auto 0;max-width:680px;font-size:clamp(1.05rem,2vw,1.4rem);font-weight:400;color:rgba(29,29,31,0.7)}
+.hero-ctas{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:var(--radius-pill);
+  padding:12px 24px;font-size:15px;font-weight:500;
+  transition:background-color .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease);
+}
+.btn-primary{background:var(--accent);color:var(--accent-contrast)}
+.btn-primary:hover{background:#000}
+.btn-ghost{background:rgba(255,255,255,0.6);border:1px solid rgba(0,0,0,0.1);color:var(--fg)}
+.btn-ghost:hover{background:#fff}
+.btn svg{width:16px;height:16px;transition:transform .2s var(--ease)}
+.btn:hover svg.arrow-down{transform:translateY(2px)}
+.btn:hover svg.arrow-up-right{transform:translate(2px,-2px)}
+
+/* Hero showcase tile (mock CR-80 card) */
+.hero-showcase-wrap{margin:56px auto 0;max-width:920px;padding-inline:22px}
+@media(min-width:768px){.hero-showcase-wrap{margin-top:80px;padding-inline:32px}}
+.hero-showcase{
+  position:relative;overflow:hidden;border-radius:24px;
+  border:1px solid rgba(0,0,0,0.05);
+  box-shadow:0 30px 60px -15px rgba(0,0,0,0.25);
+}
+@media(min-width:768px){.hero-showcase{border-radius:28px}}
+.hero-showcase img{width:100%;height:auto}
+.hero-caption{margin-top:16px;text-align:center;font-size:12px;color:rgba(29,29,31,0.5)}
+
+/* ============================================================
+   Section: Services
+   ============================================================ */
+.section-services{background:var(--bg)}
+.features-grid{
+  margin-top:56px;display:grid;gap:12px;grid-template-columns:repeat(2,1fr);
+}
+@media(min-width:1024px){.features-grid{grid-template-columns:repeat(4,1fr)}}
+.feature-card{
+  background:var(--surface);border-radius:var(--radius-lg);padding:28px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+}
+.feature-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-card)}
+.feature-icon{
+  display:inline-flex;height:44px;width:44px;align-items:center;justify-content:center;
+  border-radius:50%;background:var(--accent);color:var(--accent-contrast);margin-bottom:20px;
+}
+.feature-icon svg{width:24px;height:24px}
+.feature-card h3{font-size:17px;font-weight:600;letter-spacing:-0.02em}
+.feature-card p{margin-top:8px;font-size:14px;line-height:1.55;color:var(--fg-muted)}
+
+.services-grid{
+  margin-top:16px;display:grid;gap:12px;grid-template-columns:1fr;
+}
+@media(min-width:1024px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+.service-card{
+  position:relative;overflow:hidden;border-radius:var(--radius-lg);padding:32px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+}
+.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-card)}
+.service-card.dark{background:linear-gradient(135deg,#1d1d1f,#000);color:#fff}
+.service-card.light{background:var(--surface);color:var(--fg)}
+.service-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase}
+.service-card.dark .service-eyebrow{color:rgba(255,255,255,0.7)}
+.service-card.light .service-eyebrow{color:var(--fg-muted)}
+.service-icon-mini{
+  display:inline-flex;height:28px;width:28px;align-items:center;justify-content:center;border-radius:50%;
+}
+.service-card.dark .service-icon-mini{background:rgba(255,255,255,0.15)}
+.service-card.light .service-icon-mini{background:rgba(29,29,31,0.08)}
+.service-icon-mini svg{width:16px;height:16px}
+.service-card h3{margin-top:20px;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;letter-spacing:-0.03em}
+.service-card p{margin-top:12px;font-size:15px;line-height:1.55}
+.service-card.dark p{color:rgba(255,255,255,0.7)}
+.service-card.light p{color:var(--fg-muted)}
+.service-bullets{margin-top:24px;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.service-card.dark .service-bullets{color:rgba(255,255,255,0.85)}
+.service-card.light .service-bullets{color:rgba(29,29,31,0.75)}
+.service-bullets li{display:flex;align-items:flex-start;gap:8px}
+.service-bullets li::before{
+  content:'';display:inline-block;margin-top:6px;height:4px;width:4px;border-radius:50%;
+  background:currentColor;opacity:0.7;flex-shrink:0
+}
+
+/* ============================================================
+   Section: Pricing
+   ============================================================ */
+.section-pricing{background:var(--surface)}
+.plans-grid{
+  margin-top:56px;display:grid;gap:12px;grid-template-columns:1fr;
+}
+@media(min-width:640px){.plans-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.plans-grid{grid-template-columns:repeat(4,1fr)}}
+.plan-card{
+  position:relative;display:flex;flex-direction:column;border-radius:var(--radius-lg);
+  padding:32px;background:#fff;border:1px solid var(--border);
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+}
+.plan-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-card)}
+.plan-card.popular{
+  background:linear-gradient(180deg,#1d1d1f 0%,#000 100%);color:#fff;
+  border-color:transparent;box-shadow:var(--shadow-pop);
+}
+.plan-popular-badge{
+  position:absolute;top:20px;right:20px;display:inline-flex;align-items:center;
+  background:rgba(243,198,35,0.95);color:#000;font-size:10px;font-weight:700;
+  letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:var(--radius-pill);
+}
+.plan-range{font-size:14px;font-weight:500}
+.plan-card.popular .plan-range{color:rgba(255,255,255,0.7)}
+.plan-card:not(.popular) .plan-range{color:var(--fg-muted)}
+.plan-price-block{margin-top:20px}
+.plan-price-label{font-size:12px;letter-spacing:0.08em;text-transform:uppercase}
+.plan-card.popular .plan-price-label{color:rgba(255,255,255,0.55)}
+.plan-card:not(.popular) .plan-price-label{color:rgba(29,29,31,0.45)}
+.plan-price{
+  margin-top:4px;font-size:clamp(2rem,4vw,2.8rem);font-weight:600;letter-spacing:-0.03em;
+}
+.plan-price-unit{font-size:13px;font-weight:400}
+.plan-card.popular .plan-price-unit{color:rgba(255,255,255,0.55)}
+.plan-card:not(.popular) .plan-price-unit{color:rgba(29,29,31,0.45)}
+.plan-divider{margin-top:16px;padding-top:16px;border-top:1px solid rgba(0,0,0,0.1)}
+.plan-card.popular .plan-divider{border-top-color:rgba(255,255,255,0.1)}
+.plan-features{margin-top:24px;display:flex;flex-direction:column;gap:10px;font-size:14px;flex:1}
+.plan-features li{display:flex;align-items:flex-start;gap:8px}
+.plan-card.popular .plan-features li{color:rgba(255,255,255,0.85)}
+.plan-card:not(.popular) .plan-features li{color:rgba(29,29,31,0.75)}
+.plan-features svg{margin-top:2px;width:16px;height:16px;flex-shrink:0}
+.plan-card.popular .plan-features svg{color:var(--popular-glow)}
+.plan-card:not(.popular) .plan-features svg{color:var(--accent)}
+.plan-cta{margin-top:28px}
+.plan-card.popular .plan-cta a{background:#fff;color:#000}
+.plan-card.popular .plan-cta a:hover{background:rgba(255,255,255,0.9)}
+.plan-card:not(.popular) .plan-cta a{background:var(--accent);color:var(--accent-contrast)}
+.plan-card:not(.popular) .plan-cta a:hover{background:#000}
+
+.plan-notes{
+  margin-top:40px;display:grid;gap:12px;grid-template-columns:1fr;
+  font-size:13px;color:var(--fg-muted);
+}
+@media(min-width:640px){.plan-notes{grid-template-columns:repeat(2,1fr)}}
+.plan-note-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.plan-note-card .t{font-weight:500;color:var(--fg);margin-bottom:4px}
+.plan-note-card strong{color:var(--fg);font-weight:600}
+
+/* ============================================================
+   Section: Process
+   ============================================================ */
+.section-process{background:var(--bg)}
+.process-timeline{margin-top:64px;position:relative}
+.process-connector{display:none}
+@media(min-width:1024px){
+  .process-connector{display:block;position:absolute;top:28px;left:0;right:0;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.15) 85%,transparent)}
+}
+.steps-grid{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:640px){.steps-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.steps-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.step{position:relative}
+.step-head{display:flex;align-items:center;gap:12px}
+@media(min-width:1024px){.step-head{flex-direction:column;align-items:flex-start;gap:0}}
+.step-num{
+  position:relative;z-index:5;display:inline-flex;height:56px;width:56px;align-items:center;justify-content:center;
+  border-radius:50%;background:var(--accent);color:var(--accent-contrast);
+  font-size:15px;font-weight:600;letter-spacing:-0.02em;flex-shrink:0;
+}
+@media(min-width:1024px){.step-body{margin-top:20px}}
+.step-tag-row{display:flex;align-items:center;gap:8px}
+.step-icon{display:inline-flex;height:28px;width:28px;align-items:center;justify-content:center;border-radius:50%;background:rgba(29,29,31,0.05);color:rgba(29,29,31,0.7)}
+.step-icon svg{width:18px;height:18px}
+.step h3{font-size:19px;font-weight:600;letter-spacing:-0.02em}
+.step p{margin-top:8px;font-size:14px;line-height:1.55;color:var(--fg-muted)}
+.step-channel{margin-top:12px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--fg-soft)}
+.step-channel::before{content:'';display:inline-block;height:6px;width:6px;border-radius:50%;background:rgba(29,29,31,0.4)}
+.process-note{
+  margin:32px auto 0;max-width:920px;padding:18px 20px;
+  border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--surface);font-size:14px;line-height:1.6;color:var(--fg-muted);
+}
+.process-note strong{color:var(--fg);font-weight:600}
+.process-cta{margin-top:48px;display:flex;justify-content:center}
+
+/* ============================================================
+   Section: Contact
+   ============================================================ */
+.section-contact{background:var(--bg)}
+.contact-tile{
+  position:relative;overflow:hidden;border-radius:var(--radius-lg);
+  background:linear-gradient(180deg,#1d1d1f 0%,#000 100%);color:#fff;
+  padding:48px 24px;
+}
+@media(min-width:768px){.contact-tile{padding:80px 56px}}
+@media(min-width:1024px){.contact-tile{padding:96px}}
+.contact-glow{position:absolute;border-radius:50%;background:rgba(255,255,255,0.05);filter:blur(80px);pointer-events:none}
+.contact-glow.tr{top:-50%;right:-25%;height:120%;width:60%}
+.contact-glow.bl{bottom:-33%;left:-25%;height:100%;width:50%}
+.contact-grid{position:relative;display:grid;gap:40px;align-items:center}
+@media(min-width:1024px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-eyebrow{font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:16px}
+.contact-title{font-weight:600;letter-spacing:-0.045em;line-height:1.05;font-size:clamp(2.2rem,5vw,4rem);color:#fff}
+.contact-sub{margin-top:24px;font-size:clamp(1rem,1.6vw,1.2rem);color:rgba(255,255,255,0.7);max-width:560px}
+.contact-actions{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px}
+.btn-on-dark{background:#fff;color:#000}
+.btn-on-dark:hover{background:rgba(255,255,255,0.9)}
+.contact-cards{display:grid;gap:12px}
+.contact-card{
+  background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);
+  border-radius:var(--radius);padding:20px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+}
+.contact-card-row{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.85)}
+.contact-card-icon{display:inline-flex;height:36px;width:36px;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,0.1)}
+.contact-card-icon svg{width:16px;height:16px}
+.contact-card-label{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5)}
+.contact-card-value{font-size:15px;font-weight:500;letter-spacing:-0.02em}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer{background:var(--surface);border-top:1px solid var(--border)}
+.footer-inner{padding:48px 0}
+@media(min-width:768px){.footer-inner{padding:56px 0}}
+.footer-grid{display:grid;gap:40px;grid-template-columns:1fr}
+@media(min-width:768px){.footer-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+.footer-brand .brand{margin-bottom:12px}
+.footer-brand p{font-size:13px;line-height:1.55;color:var(--fg-soft);max-width:320px}
+.footer-col-title{font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--fg-soft);margin-bottom:12px}
+.footer-col ul{display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--fg-muted)}
+.footer-col ul a,.footer-col ul li{transition:color .2s var(--ease)}
+.footer-col ul a:hover{color:var(--fg)}
+.footer-bottom{
+  margin-top:40px;padding-top:24px;border-top:1px solid var(--border);
+  display:flex;flex-direction:column;gap:12px;font-size:12px;color:var(--fg-soft);
+}
+@media(min-width:640px){.footer-bottom{flex-direction:row;justify-content:space-between;align-items:center}}
+.footer-bottom p{color:var(--fg-soft)}
+
+/* ============================================================
+   Reveal-on-scroll
+   ============================================================ */
+.reveal{transform:translateY(24px);transition:transform var(--dur) var(--ease)}
+.reveal.is-in{transform:none}
+
+/* Respect reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{transform:none!important}
+  .hero-eyebrow,.hero-title-row,.hero-sub,.hero-ctas,.hero-showcase{opacity:1!important;transform:none!important}
+}
+
+/* Custom scrollbar (subtle, Apple-like) */
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.18);border-radius:99px;border:2px solid transparent;background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,0.3);background-clip:padding-box;border:2px solid transparent}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#inicio" class="brand" aria-label="Prioritas Creativo inicio">
+      <span class="brand-badge">PC</span>
+      <span>Prioritas Creativo</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer" class="cta-pill cta-desktop">WhatsApp</a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg id="navIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <ul>
+    <li><a href="#inicio" data-close>Inicio</a></li>
+    <li><a href="#servicios" data-close>Servicios</a></li>
+    <li><a href="#precios" data-close>Precios</a></li>
+    <li><a href="#proceso" data-close>Proceso</a></li>
+    <li><a href="#contacto" data-close>Contacto</a></li>
+    <li class="cta-li"><a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer" data-close>WhatsApp</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- ============ HERO / INICIO ============ -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-inner">
+      <p class="eyebrow hero-eyebrow">Quito · Ecuador</p>
+      <h1 class="hero-title hero-title-row">
+        Credenciales PVC<br/>
+        <span class="hero-title-mute">Personalizadas en Quito</span>
+      </h1>
+      <p class="hero-sub">
+        Identificación profesional de alta calidad. Diseño a medida,
+        materiales premium y entrega puntual para tu empresa u organización.
+      </p>
+      <div class="hero-ctas">
+        <a href="#precios" class="btn btn-primary">
+          Ver Precios
+          <svg class="arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          Cotizar ahora
+          <svg class="arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-showcase-wrap">
+      <div class="hero-showcase">
+        <img src="img/hero.png" alt="Credenciales PVC personalizadas de Prioritas Creativo" />
+      </div>
+      <p class="hero-caption">Formato CR-80 · 85.6 × 54 mm · estándar ISO 7810 ID-1</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="section section-services" id="servicios">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Servicios</p>
+      <h2 class="headline">Todo lo que tu marca necesita para ser reconocida.</h2>
+      <p>Tres líneas de servicio pensadas para acompañar tu identificación física y digital, con la calidad y el detalle de Prioritas Creativo.</p>
+    </div>
+
+    <!-- 4 features -->
+    <div class="features-grid reveal">
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+        <h3>Impresión HD</h3>
+        <p>Alta definición y colores vibrantes en cada credencial.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Materiales Resistentes</h3>
+        <p>PVC duradero, resistente al desgaste y la manipulación diaria.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h3>Entrega Puntual</h3>
+        <p>Cumplimiento estricto de los plazos acordados con cada cliente.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+        <h3>Atención Personalizada</h3>
+        <p>Asesoramiento en cada detalle del diseño y la producción.</p>
+      </article>
+    </div>
+
+    <!-- 3 service lines -->
+    <div class="services-grid reveal">
+      <article class="service-card dark">
+        <div class="service-eyebrow">
+          <span class="service-icon-mini" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></span>
+          Identificación
+        </div>
+        <h3>Credenciales PVC</h3>
+        <p>Formato CR-80 estándar (85.6 × 54 mm), impresión profesional, diseño a medida y materiales premium para una identificación de alto impacto.</p>
+        <ul class="service-bullets">
+          <li>Formato CR-80 ISO 7810 ID-1</li>
+          <li>PVC premium resistente al desgaste</li>
+          <li>Impresión HD a doble cara disponible</li>
+          <li>Diseño a medida con tu marca</li>
+        </ul>
+      </article>
+      <article class="service-card light">
+        <div class="service-eyebrow">
+          <span class="service-icon-mini" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a9 9 0 1 1 0-18"/></svg></span>
+          Identidad visual
+        </div>
+        <h3>Diseño Gráfico</h3>
+        <p>Diseño corporativo, web y multimedia para construir una identidad visual de marca sólida, coherente y memorable en todos tus puntos de contacto.</p>
+        <ul class="service-bullets">
+          <li>Identidad corporativa y logotipos</li>
+          <li>Diseño web y multimedia</li>
+          <li>Sistemas visuales escalables</li>
+          <li>Material para impresión y digital</li>
+        </ul>
+      </article>
+      <article class="service-card light">
+        <div class="service-eyebrow">
+          <span class="service-icon-mini" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg></span>
+          Digital
+        </div>
+        <h3>Tarjetas Virtuales</h3>
+        <p>Tarjetas digitales interactivas con portfolio, redes sociales, videos y calendario. Una experiencia de presentación moderna que abre en cualquier dispositivo.</p>
+        <ul class="service-bullets">
+          <li>Portfolio y galería integrados</li>
+          <li>Enlaces a redes sociales</li>
+          <li>Videos y multimedia embebida</li>
+          <li>Calendario y formas de contacto</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRECIOS ============ -->
+<section class="section section-pricing" id="precios">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Precios</p>
+      <h2 class="headline">Precios claros, escalados por volumen.</h2>
+      <p>Credencial PVC CR-80 (85.6 × 54 mm). Precios por unidad en USD, sujetos a verificación de diseño. Cuanto más pidas, menos pagas por credencial.</p>
+    </div>
+
+    <div class="plans-grid reveal" id="plansGrid"><!-- plans injected by JS --></div>
+
+    <div class="plan-notes reveal">
+      <div class="plan-note-card">
+        <p class="t">Diferencia simple vs. doble cara</p>
+        <p>Solo <strong>$0.50</strong> adicionales por credencial en todos los rangos.</p>
+      </div>
+      <div class="plan-note-card">
+        <p class="t">Descuento por volumen</p>
+        <p>Desde el primer hasta el último rango, hasta un <strong>66% de ahorro</strong> en modalidad simple.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section class="section section-process" id="proceso">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Proceso</p>
+      <h2 class="headline">De la cotización a la entrega, en cuatro pasos.</h2>
+      <p>Un proceso simple, transparente y siempre conversando por WhatsApp. Tú apruebas, nosotros nos encargamos del resto.</p>
+    </div>
+
+    <div class="process-timeline reveal">
+      <div class="process-connector" aria-hidden="true"></div>
+      <ol class="steps-grid" id="stepsGrid"><!-- steps injected by JS --></ol>
+    </div>
+
+    <p class="process-note reveal">
+      <strong>Condiciones de compra:</strong> Se requiere el <strong>50 %</strong> de anticipo y el <strong>50 %</strong> restante a la entrega del proyecto si es retiro en oficina. Para envíos se requiere el <strong>100 %</strong> del pago, más el costo del envío.
+    </p>
+
+    <div class="process-cta reveal">
+      <a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Iniciar el proceso en WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section section-contact" id="contacto">
+  <div class="container">
+    <div class="contact-tile reveal">
+      <div class="contact-glow tr" aria-hidden="true"></div>
+      <div class="contact-glow bl" aria-hidden="true"></div>
+      <div class="contact-grid">
+        <div>
+          <p class="contact-eyebrow">Contacto</p>
+          <h2 class="contact-title">Hablemos de tu<br/>próximo proyecto.</h2>
+          <p class="contact-sub">Escríbenos por WhatsApp y te responderemos con una cotización a la medida de tus cantidades y tiempos de entrega.</p>
+          <div class="contact-actions">
+            <a id="contactCta" href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer" class="btn btn-on-dark">
+              Contactar ahora
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-row">
+              <span class="contact-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+              <div>
+                <p class="contact-card-label">WhatsApp / Teléfono</p>
+                <p class="contact-card-value">+593 98 485 3643</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-row">
+              <span class="contact-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <p class="contact-card-label">Ubicación</p>
+                <p class="contact-card-value">Quito, Ecuador</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-row">
+              <span class="contact-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <div>
+                <p class="contact-card-label">Horario</p>
+                <p class="contact-card-value">Atención vía WhatsApp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand"><span class="brand-badge">PC</span><span>Prioritas Creativo</span></a>
+        <p>Credenciales PVC personalizadas, diseño gráfico corporativo y tarjetas virtuales interactivas. Quito, Ecuador.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Navegación</p>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Servicios</p>
+        <ul>
+          <li>Credenciales PVC CR-80</li>
+          <li>Diseño Gráfico Corporativo</li>
+          <li>Tarjetas Virtuales Interactivas</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Contacto</p>
+        <ul>
+          <li><a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer">+593 98 485 3643 (WhatsApp)</a></li>
+          <li>Quito, Ecuador</li>
+          <li><a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer">Iniciar conversación</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Prioritas Creativo. Todos los derechos reservados.</p>
+      <p>Hecho en Quito, Ecuador · PVC CR-80 ISO 7810 ID-1</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   Data: plans + steps
+   ============================================================ */
+const WHATSAPP = 'https://wa.me/593984853643';
+
+const plans = [
+  { range:'1 – 3 unidades', oneFace:'$3.00', doubleFace:'$3.50', popular:false, ctaLabel:'Cotizar' },
+  { range:'4 – 11 unidades', oneFace:'$2.00', doubleFace:'$2.50', popular:false, ctaLabel:'Cotizar' },
+  { range:'12 – 99 unidades', oneFace:'$1.50', doubleFace:'$2.00', popular:true,  ctaLabel:'Cotizar' },
+  { range:'100+ unidades',   oneFace:'$1.00', doubleFace:'$1.50', popular:true,  ctaLabel:'Cotizar Ahora' },
+];
+
+const planFeatures = ['Diseño: cotizar','PVC CR-80 (ISO 7810)','Impresión HD'];
+
+const steps = [
+  { num:'01', name:'Cotización', channel:'WhatsApp',
+    desc:'El cliente solicita su presupuesto a través de WhatsApp. Conversemos sobre tu proyecto, tus cantidades y los detalles que necesitas.',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>'
+  },
+  { num:'02', name:'Diseño', channel:'WhatsApp',
+    desc:'Envía tu diseño en alta resolución, con medidas CR-80 (85,6 × 54 mm), en formato Illustrator o PNG. ¿No tienes diseño? No te preocupes: nuestro equipo lo prepara y puedes continuar al siguiente paso.',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>'
+  },
+  { num:'03', name:'Aprobación', channel:'WhatsApp',
+    desc:'Verificación de datos finales antes de imprimir. Cuidamos cada nombre, cargo, código y color para que la entrega sea impecable.',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>'
+  },
+  { num:'04', name:'Entrega', channel:'Presencial',
+    desc:'El cliente retira sus credenciales en Quito, Ecuador. Cierre presencial del proceso, con la calidad ya terminada y lista para usar.',
+    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>'
+  }
+];
+
+/* ============================================================
+   Render: plans
+   ============================================================ */
+const plansGrid = document.getElementById('plansGrid');
+plansGrid.innerHTML = plans.map(p => {
+  const waLink = `${WHATSAPP}?text=${encodeURIComponent('Hola Prioritas Creativo, me interesa el plan de ' + p.range + ' de credenciales PVC.')}`;
+  return `
+  <article class="plan-card ${p.popular ? 'popular' : ''}">
+    ${p.popular ? '<span class="plan-popular-badge">Popular</span>' : ''}
+    <p class="plan-range">${p.range}</p>
+    <div class="plan-price-block">
+      <p class="plan-price-label">1 cara</p>
+      <p class="plan-price">${p.oneFace}<span class="plan-price-unit"> /u</span></p>
+    </div>
+    <div class="plan-divider">
+      <p class="plan-price-label">Doble cara</p>
+      <p class="plan-price">${p.doubleFace}<span class="plan-price-unit"> /u</span></p>
+    </div>
+    <ul class="plan-features">
+      ${planFeatures.map(b => `
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          ${b}
+        </li>
+      `).join('')}
+    </ul>
+    <div class="plan-cta">
+      <a class="btn" href="${waLink}" target="_blank" rel="noopener noreferrer">
+        ${p.ctaLabel}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </div>
+  </article>`;
+}).join('');
+
+/* ============================================================
+   Render: steps
+   ============================================================ */
+const stepsGrid = document.getElementById('stepsGrid');
+stepsGrid.innerHTML = steps.map(s => `
+  <li class="step">
+    <div class="step-head">
+      <div class="step-num">${s.num}</div>
+      <div class="step-body">
+        <div class="step-tag-row">
+          <span class="step-icon" aria-hidden="true">${s.icon}</span>
+          <h3>${s.name}</h3>
+        </div>
+        <p>${s.desc}</p>
+        <p class="step-channel">Canal: ${s.channel}</p>
+      </div>
+    </div>
+  </li>
+`).join('');
+
+/* ============================================================
+   WhatsApp prefilled message for contact CTA
+   ============================================================ */
+document.getElementById('contactCta').setAttribute(
+  'href',
+  `${WHATSAPP}?text=${encodeURIComponent('Hola Prioritas Creativo, me gustaría recibir información sobre las credenciales PVC.')}`
+);
+
+/* ============================================================
+   Header scroll blur
+   ============================================================ */
+const header = document.getElementById('siteHeader');
+const onScroll = () => {
+  if (window.scrollY > 8) header.classList.add('scrolled');
+  else header.classList.remove('scrolled');
+};
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+/* ============================================================
+   Mobile drawer
+   ============================================================ */
+const navToggle = document.getElementById('navToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const navIcon = document.getElementById('navIcon');
+const ICON_OPEN = '<line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>';
+const ICON_CLOSE = '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>';
+
+function setDrawer(open) {
+  mobileDrawer.classList.toggle('open', open);
+  mobileDrawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  navToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  navIcon.innerHTML = open ? ICON_CLOSE : ICON_OPEN;
+}
+navToggle.addEventListener('click', () => setDrawer(!mobileDrawer.classList.contains('open')));
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => setDrawer(false)));
+window.addEventListener('keydown', e => { if (e.key === 'Escape') setDrawer(false); });
+
+/* ============================================================
+   Reveal on scroll (IntersectionObserver)
+   ============================================================ */
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!prefersReduced && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+}
+
+/* ============================================================
+   Hero reveal on load
+   ============================================================ */
+const hero = document.querySelector('.hero');
+if (hero) {
+  // Respect reduced motion
+  if (prefersReduced) {
+    hero.classList.add('is-in');
+  } else {
+    requestAnimationFrame(() => {
+      setTimeout(() => hero.classList.add('is-in'), 50);
+    });
+  }
+}
+
+/* ============================================================
+   Smooth scroll for anchor links (with header offset fallback)
+   ============================================================ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const id = a.getAttribute('href');
+    if (!id || id === '#') return;
+    const el = document.querySelector(id);
+    if (!el) return;
+    e.preventDefault();
+    const headerH = header.offsetHeight;
+    const y = el.getBoundingClientRect().top + window.scrollY - headerH - 12;
+    window.scrollTo({ top: y, behavior: prefersReduced ? 'auto' : 'smooth' });
+    // Update focus for accessibility
+    history.replaceState(null, '', id);
+  });
+});
+</script>
+</body>
+</html>
