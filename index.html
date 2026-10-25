@@ -415,15 +415,104 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px)}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.18);border-radius:99px;border:2px solid transparent;background-clip:padding-box}
 ::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,0.3);background-clip:padding-box;border:2px solid transparent}
+
+/* ============================================================
+   Welcome Popup (muestra la imagen popup.png al abrir el sitio)
+   ============================================================ */
+.welcome-popup{
+  position:fixed;inset:0;z-index:1000;
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;
+  background:rgba(0,0,0,0.55);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  opacity:0;visibility:hidden;
+  transition:opacity .35s var(--ease),visibility .35s var(--ease);
+}
+.welcome-popup.is-open{opacity:1;visibility:visible}
+
+.welcome-popup-card{
+  position:relative;
+  max-width:520px;width:100%;
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 30px 80px -20px rgba(0,0,0,0.55);
+  transform:translateY(20px) scale(0.96);
+  transition:transform .45s var(--ease);
+}
+.welcome-popup.is-open .welcome-popup-card{transform:none}
+
+.welcome-popup-img{
+  display:block;width:100%;height:auto;
+  line-height:0;
+}
+
+.welcome-popup-close{
+  position:absolute;top:12px;right:12px;
+  display:inline-flex;align-items:center;justify-content:center;
+  height:38px;width:38px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.85);
+  color:#1d1d1f;
+  box-shadow:0 4px 14px rgba(0,0,0,0.18);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  transition:background-color .2s var(--ease),transform .2s var(--ease);
+  z-index:2;
+}
+.welcome-popup-close:hover{background:#fff;transform:rotate(90deg) scale(1.05)}
+.welcome-popup-close svg{width:18px;height:18px}
+
+.welcome-popup-actions{
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+  padding:18px 20px 22px;
+  background:#fff;
+}
+.welcome-popup-actions .btn{padding:10px 20px;font-size:14px}
+.welcome-popup-actions .btn-close{background:transparent;border:1px solid rgba(0,0,0,0.12);color:var(--fg)}
+.welcome-popup-actions .btn-close:hover{background:#f5f5f7}
+
+/* Bloquea el scroll del body mientras el popup está abierto */
+body.popup-open{overflow:hidden}
+
+/* Responsive del popup */
+@media(max-width:480px){
+  .welcome-popup{padding:0}
+  .welcome-popup-card{max-width:100%;border-radius:0;height:100%;display:flex;flex-direction:column;justify-content:center}
+  .welcome-popup-actions{border-radius:0}
+}
 </style>
 </head>
 <body>
+
+<!-- ============ WELCOME POPUP ============ -->
+<div class="welcome-popup" id="welcomePopup" role="dialog" aria-modal="true" aria-labelledby="welcomePopupTitle" aria-hidden="true">
+  <div class="welcome-popup-card" role="document">
+    <button type="button" class="welcome-popup-close" id="welcomePopupClose" aria-label="Cerrar ventana">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <img class="welcome-popup-img" id="welcomePopupTitle" src="img/popup.png" alt="Promo Credenciales PVC Personalizadas — $3.50 desde 12 unidades en Prioritas Creativo" />
+    <div class="welcome-popup-actions">
+      <a href="#precios" class="btn btn-primary" id="welcomePopupCta" data-close-popup>
+        Ver precios
+        <svg class="arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+      <a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-close-popup>
+        Cotizar ahora
+        <svg class="arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
 
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="#inicio" class="brand" aria-label="Prioritas Creativo inicio">
-      <span class="brand-badge">PC</span>
+      <!--<span class="brand-badge">PC</span>-->
       <span>Prioritas Creativo</span>
     </a>
     <nav class="nav-desktop" aria-label="Navegación principal">
@@ -682,7 +771,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px)}
   <div class="container footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#inicio" class="brand"><span class="brand-badge">PC</span><span>Prioritas Creativo</span></a>
+        <a href="#inicio" class="brand"><span class="brand-badge"></span><span>Prioritas Creativo</span></a>
         <p>Credenciales PVC personalizadas, diseño gráfico corporativo y tarjetas virtuales interactivas. Quito, Ecuador.</p>
       </div>
       <div class="footer-col">
@@ -707,6 +796,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px)}
         <p class="footer-col-title">Contacto</p>
         <ul>
           <li><a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer">+593 98 485 3643 (WhatsApp)</a></li>
+          <li>Psje. OE4P N62-50 y Sabanilla</li>
           <li>Quito, Ecuador</li>
           <li><a href="https://wa.me/593984853643" target="_blank" rel="noopener noreferrer">Iniciar conversación</a></li>
         </ul>
@@ -896,6 +986,65 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     window.scrollTo({ top: y, behavior: prefersReduced ? 'auto' : 'smooth' });
     // Update focus for accessibility
     history.replaceState(null, '', id);
+  });
+});
+
+/* ============================================================
+   Welcome Popup — se abre automáticamente al cargar el sitio
+   ============================================================ */
+const welcomePopup = document.getElementById('welcomePopup');
+const welcomePopupClose = document.getElementById('welcomePopupClose');
+
+// Clave de sessionStorage para que no reaparezca en cada navegación
+// dentro de la misma sesión del navegador.
+const POPUP_SESSION_KEY = 'prioritas_welcome_popup_seen';
+
+function openWelcomePopup() {
+  if (!welcomePopup) return;
+  welcomePopup.classList.add('is-open');
+  welcomePopup.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('popup-open');
+  // Foco al botón de cerrar para accesibilidad
+  setTimeout(() => { welcomePopupClose && welcomePopupClose.focus(); }, 50);
+}
+
+function closeWelcomePopup() {
+  if (!welcomePopup) return;
+  welcomePopup.classList.remove('is-open');
+  welcomePopup.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('popup-open');
+  try { sessionStorage.setItem(POPUP_SESSION_KEY, '1'); } catch (e) {}
+}
+
+// Abrir automáticamente al cargar la página
+window.addEventListener('load', () => {
+  let alreadySeen = false;
+  try { alreadySeen = sessionStorage.getItem(POPUP_SESSION_KEY) === '1'; } catch (e) {}
+  if (alreadySeen) return;
+  // Pequeño retardo para no competir con la animación inicial del hero
+  setTimeout(openWelcomePopup, prefersReduced ? 0 : 600);
+});
+
+// Cerrar con botón ×
+welcomePopupClose && welcomePopupClose.addEventListener('click', closeWelcomePopup);
+
+// Cerrar al hacer clic en el fondo oscuro (no en la tarjeta)
+welcomePopup && welcomePopup.addEventListener('click', (e) => {
+  if (e.target === welcomePopup) closeWelcomePopup();
+});
+
+// Cerrar con tecla ESC
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && welcomePopup && welcomePopup.classList.contains('is-open')) {
+    closeWelcomePopup();
+  }
+});
+
+// Cerrar al hacer clic en los botones del popup (Ver precios / Cotizar ahora)
+document.querySelectorAll('[data-close-popup]').forEach(el => {
+  el.addEventListener('click', () => {
+    // Permitir que el anchor link haga su scroll antes de cerrar
+    setTimeout(closeWelcomePopup, 0);
   });
 });
 </script>
